@@ -1,5 +1,5 @@
 import java.util.*;
-public class tappingwater {
+public class trappingwater {
     public static int trappingrainwater(int num[], int n){
         int res=0;
         int min=0; 
