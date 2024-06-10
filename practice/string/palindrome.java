@@ -12,9 +12,9 @@ public class palindrome {
         String reverseString= revBuilder.toString();
 
         if(str.compareTo(reverseString)==0){
-            System.out.println("The given String is a palindrome Number.");
+            System.out.println("The given String is a palindrome String.");
         }else{
-            System.out.println("The given String is not a palindrome Number.");
+            System.out.println("The given String is not a palindrome String.");
         }
     }
 
