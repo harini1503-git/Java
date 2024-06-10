@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class repeatmissing {
 
     public static void repeatedandmissing(int num[], int n){

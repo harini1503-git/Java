@@ -2,32 +2,25 @@ import java.util.*;
 public class arragementobiggest {
     public static void biggestnumber(int num[], int n){
         
-        long number=0;
-        Arrays.sort(num);
 
+        String str1= "";
         for(int i=0; i<n; i++){
-            for(int j=i+1; j<n; j++){
-                String str1= Integer.toString(num[i]);
-                String str2= Integer.toString(num[j]);
-                String str3String= str1+ str2;
-                String str4String= str2+str1;
+            String str2= Integer.toString(num[i]);
+            String str3= Integer.toString(num[i+1]);
+            
+            String concateString1= str2+str3;
+            String concateString2= str3+str2;
 
-                int concatenumber1= Integer.parseInt(str3String);
-                int concatenumber2= Integer.parseInt(str4String);
+            int integer1= Integer.parseInt(concateString1);
+            int integer2= Integer.parseInt(concateString2);
 
-                String numString= Long.toString(number);
-
-                if (concatenumber1< concatenumber2) {
-                    numString= numString+ str3String;
-                    number= Long.parseLong(numString);
-                    System.out.println(number);
-                }else if (concatenumber2< concatenumber1) {
-                    numString= numString+ str4String;
-                    number= Integer.parseInt(numString);
-                    System.out.println(number);
-                }
+            if(integer1 > integer2){
+                str1= str1+ concateString1;
+            }else if(integer2 > integer1){
+                str1= str1+ concateString2;
             }
         }
+        System.out.println(str1);
     }
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);

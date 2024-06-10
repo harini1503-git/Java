@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class productofarray {
 
     public static void productofarrayexceptitself(int num[], int n){
