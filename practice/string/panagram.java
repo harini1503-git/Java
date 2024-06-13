@@ -18,7 +18,7 @@ public class panagram {
         return true;
     }
     public static void main(String[] args) {
-        String str= "my name is harini mudaliar ravi";
+        String str= "the quick brown fox jumps over the lazy dog";
 
         ispanagram(str);
     }
