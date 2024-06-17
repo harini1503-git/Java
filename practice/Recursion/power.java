@@ -9,8 +9,12 @@ public class power {
         }else if(n==0){
             return 1;
         }
-        x= x* printpower(x, n-1);
-        return x;
+        //for height of the stack is log n
+        if (n%2== 0) {
+            return printpower(x, n/2) * printpower(x, n/2);
+        }else{
+            return printpower(x, n/2)* printpower(x, n/2) * x;
+        }
     }
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
